@@ -1,0 +1,34 @@
+i, n = map(int, input().split())
+dalia = i
+eloi = i
+felix = i
+for c in range(0, n):
+    a = input().split()
+    if a[0] == 'C':
+        if a[1] == 'D':
+            dalia = dalia - int(a[2])
+        if a[1] == 'E':
+            eloi = eloi - int(a[2])
+        if a[1] == 'F':
+            felix = felix - int(a[2])
+    if a[0] == 'V':
+        if a[1] == 'D':
+            dalia = dalia + int(a[2])
+        if a[1] == 'E':
+            eloi = eloi + int(a[2])
+        if a[1] == 'F':
+            felix = felix + int(a[2])
+    if a[0] == 'A':
+        if a[1] == 'D':
+            dalia = dalia + int(a[3])
+        if a[1] == 'E':
+            eloi = eloi + int(a[3])
+        if a[1] == 'F':
+            felix = felix + int(a[3])
+        if a[2] == 'D':
+            dalia = dalia - int(a[3])
+        if a[2] == 'E':
+            eloi = eloi - int(a[3])
+        if a[2] == 'F':
+            felix = felix - int(a[3])
+print(f'{dalia} {eloi} {felix}')
